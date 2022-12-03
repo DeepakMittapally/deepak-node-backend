@@ -4,6 +4,9 @@ const fs = require("fs");
 
 const server = http.createServer((req, res) => {
     const headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
+        "Access-Control-Max-Age": 2592000, 
        
         'Content-Type': 'application/json'
       };
